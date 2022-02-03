@@ -31,5 +31,21 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //DECLARARAAS VARIAVEIS
+            int Tcel, Tkel, Tfah;
+            //LER A TEMPERATURA EM CELCIUS A SER CONVERTIDA
+            Tcel = int.Parse(textBox1.Text);
+            //CALCULANDO AS CONVERSOES
+            Tkel = Tcel + 273;
+            Tfah = (((Tcel * 9) / 5) + 32);
+            //converter o resultado para  string
+            //dessa forma conseguimos exibir o resultado
+            label3.Text = Tkel.ToString();
+            label5.Text = Tfah.ToString();
+
+        }
     }
 }
